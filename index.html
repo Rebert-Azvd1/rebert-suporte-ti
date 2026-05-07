@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebert Suporte & TI - Manutenção a Domicílio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #22c55e;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --text: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .tagline { font-size: 1.2rem; opacity: 0.9; margin-bottom: 20px; }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: -80px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card h3 { color: var(--dark); margin-bottom: 15px; }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-btn:hover { background-color: #16a34a; }
+
+        .info-pills {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .pill {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rebert Suporte & TI</h1>
+    <p class="tagline">Soluções tecnológicas no conforto da sua casa</p>
+    <div class="info-pills">
+        <span class="pill">Atendimento Noturno</span>
+        <span class="pill">Finais de Semana</span>
+        <span class="pill">A Domicílio</span>
+    </div>
+</header>
+
+<div class="container">
+    <div class="services">
+        <div class="card">
+            <span class="icon">💻</span>
+            <h3>Formatação & SSD</h3>
+            <p>Seu computador está lento? Faço a formatação com backup e instalação de SSD para deixá-lo novo de novo.</p>
+        </div>
+        <div class="card">
+            <span class="icon">🛠️</span>
+            <h3>Limpeza & Preventiva</h3>
+            <p>Troca de pasta térmica e limpeza interna para evitar que seu notebook queime por superaquecimento.</p>
+        </div>
+        <div class="card">
+            <span class="icon">📶</span>
+            <h3>Redes & Wi-Fi</h3>
+            <p>Melhoria do sinal de internet, configuração de roteadores e remoção de vírus/malwares.</p>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>Precisa de um orçamento gratuito?</h2>
+        <p>Atendo em domicílio com horário agendado para não atrapalhar sua rotina.</p>
+        <a href="https://wa.me/5500000000000?text=Olá%20Rebert,%20vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento!" class="whatsapp-btn">
+            Solicitar Orçamento via WhatsApp
+        </a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Rebert Suporte & TI. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
