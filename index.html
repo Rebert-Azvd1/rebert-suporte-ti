@@ -1,165 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebert Suporte & TI - Manutenção a Domicílio</title>
-    <style>
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-            --accent: #22c55e;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --text: #334155;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-        }
-
-        body {
-            background-color: var(--light);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .tagline { font-size: 1.2rem; opacity: 0.9; margin-bottom: 20px; }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: -80px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-            border-bottom: 5px solid var(--primary);
-        }
-
-        .card:hover { transform: translateY(-10px); }
-
-        .icon {
-            font-size: 40px;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .card h3 { color: var(--dark); margin-bottom: 15px; }
-
-        .cta-section {
-            text-align: center;
-            margin-top: 60px;
-            padding: 40px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-        }
-
-        .whatsapp-btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            padding: 18px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-
-        .whatsapp-btn:hover { background-color: #16a34a; }
-
-        .info-pills {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .pill {
-            background: rgba(255,255,255,0.2);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rebert Azevedo | Especialista em Tecnologia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-
-<header>
-    <h1>Rebert Suporte & TI</h1>
-    <p class="tagline">Soluções tecnológicas no conforto da sua casa</p>
-    <div class="info-pills">
-        <span class="pill">Atendimento Noturno</span>
-        <span class="pill">Finais de Semana</span>
-        <span class="pill">A Domicílio</span>
-    </div>
-</header>
-
-<div class="container">
-    <div class="services">
-        <div class="card">
-            <span class="icon">💻</span>
-            <h3>Formatação & SSD</h3>
-            <p>Seu computador está lento? Faço a formatação com backup e instalação de SSD para deixá-lo novo de novo.</p>
+    <header>
+        <h1 class="logo-text">Rebert Azevedo</h1>
+        <p class="subtitle">Sua solução em tecnologia</p>
+        <div class="info-tags">
+            <span class="tag"><i class="fa-solid fa-house-laptop"></i> Atendimento em Domicílio</span>
+            <span class="tag"><i class="fa-solid fa-moon"></i> Suporte Noturno</span>
+            <span class="tag"><i class="fa-solid fa-calendar-days"></i> Finais de Semana</span>
         </div>
-        <div class="card">
-            <span class="icon">🛠️</span>
-            <h3>Limpeza & Preventiva</h3>
-            <p>Troca de pasta térmica e limpeza interna para evitar que seu notebook queime por superaquecimento.</p>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Manutenção</h3>
+                <p>Limpeza profunda e troca de pasta térmica.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h3>Upgrades</h3>
+                <p>Instalação de SSDs e Memória RAM.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-compact-disc"></i>
+                <h3>Formatação</h3>
+                <p>Windows/Linux com backup seguro.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-shield-virus"></i>
+                <h3>Segurança</h3>
+                <p>Eliminação completa de vírus e malwares.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Hardware</h3>
+                <p>Troca de telas, fontes e placas-mãe.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>PC Gamer</h3>
+                <p>Montagem e consultoria especializada.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-wifi"></i>
+                <h3>Redes Wi-Fi</h3>
+                <p>Configuração de roteadores e Mesh.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Consultoria</h3>
+                <p>Suporte remoto e ajuda em compras.</p>
+            </div>
         </div>
-        <div class="card">
-            <span class="icon">📶</span>
-            <h3>Redes & Wi-Fi</h3>
-            <p>Melhoria do sinal de internet, configuração de roteadores e remoção de vírus/malwares.</p>
-        </div>
-    </div>
 
-    <div class="cta-section">
-        <h2>Precisa de um orçamento gratuito?</h2>
-        <p>Atendo em domicílio com horário agendado para não atrapalhar sua rotina.</p>
-        <a href="https://wa.me/5500000000000?text=Olá%20Rebert,%20vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento!" class="whatsapp-btn">
-            Solicitar Orçamento via WhatsApp
-        </a>
-    </div>
-</div>
+        <section class="contact-box">
+            <h2>Pronto para resolver seu problema?</h2>
+            <p>Atendimento rápido e transparente. Eu vou até você!</p>
+            <div class="btn-container">
+                <a href="https://wa.me/5574981396860?text=Olá%20Rebert,%20preciso%20de%20suporte%20técnico!" target="_blank" class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> (74) 98139-6860
+                </a>
+                <a href="https://www.instagram.com/rebertazevedo" target="_blank" class="btn btn-insta">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </section>
+    </main>
 
-<footer>
-    <p>&copy; 2024 Rebert Suporte & TI. Todos os direitos reservados.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 Rebert Azevedo - Suporte & Manutenção Especializada.</p>
+    </footer>
 </body>
-</html>
