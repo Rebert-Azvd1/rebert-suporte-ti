@@ -1,85 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rebert Azevedo | Especialista em Tecnologia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+    <title>Rebert Azevedo | Especialista em TI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-    <header>
-        <h1 class="logo-text">Rebert Azevedo</h1>
-        <p class="subtitle">Sua solução em tecnologia</p>
-        <div class="info-tags">
-            <span class="tag"><i class="fa-solid fa-house-laptop"></i> Atendimento em Domicílio</span>
-            <span class="tag"><i class="fa-solid fa-moon"></i> Suporte Noturno</span>
-            <span class="tag"><i class="fa-solid fa-calendar-days"></i> Finais de Semana</span>
+  </head>
+  <body>
+    <div class="glass-wrapper">
+      <header>
+        <h1 class="logo-text">REBERT AZEVEDO</h1>
+        <p class="tagline">Sua Solução em Tecnologia</p>
+      </header>
+
+      <main class="services-grid">
+        <div class="item">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <div class="text-group">
+            <span>Manutenção</span>
+            <p>Limpeza profunda e troca de pasta térmica.</p>
+          </div>
         </div>
-    </header>
-
-    <main class="container">
-        <h2 class="section-title">Nossos Serviços</h2>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <h3>Manutenção</h3>
-                <p>Limpeza profunda e troca de pasta térmica.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-gauge-high"></i>
-                <h3>Upgrades</h3>
-                <p>Instalação de SSDs e Memória RAM.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-compact-disc"></i>
-                <h3>Formatação</h3>
-                <p>Windows/Linux com backup seguro.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-shield-virus"></i>
-                <h3>Segurança</h3>
-                <p>Eliminação completa de vírus e malwares.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-microchip"></i>
-                <h3>Hardware</h3>
-                <p>Troca de telas, fontes e placas-mãe.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-gamepad"></i>
-                <h3>PC Gamer</h3>
-                <p>Montagem e consultoria especializada.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-wifi"></i>
-                <h3>Redes Wi-Fi</h3>
-                <p>Configuração de roteadores e Mesh.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-headset"></i>
-                <h3>Consultoria</h3>
-                <p>Suporte remoto e ajuda em compras.</p>
-            </div>
+        <div class="item">
+          <i class="fa-solid fa-compact-disc"></i>
+          <div class="text-group">
+            <span>Formatação</span>
+            <p>Windows/Linux com backup 100% seguro.</p>
+          </div>
         </div>
+        <div class="item">
+          <i class="fa-solid fa-microchip"></i>
+          <div class="text-group">
+            <span>Hardware</span>
+            <p>Troca de telas, fontes e placas-mãe.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-shield-virus"></i>
+          <div class="text-group">
+            <span>Segurança</span>
+            <p>Remoção de vírus e malwares.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-gauge-high"></i>
+          <div class="text-group">
+            <span>Upgrades</span>
+            <p>Instalação de SSD e Memória RAM.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-gamepad"></i>
+          <div class="text-group">
+            <span>PC Gamer</span>
+            <p>Montagem e consultoria completa.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-wifi"></i>
+          <div class="text-group">
+            <span>Redes</span>
+            <p>Configuração de Wi-Fi Mesh e Roteadores.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-headset"></i>
+          <div class="text-group">
+            <span>Consultoria</span>
+            <p>Suporte remoto e auxílio em compras.</p>
+          </div>
+        </div>
+      </main>
 
-        <section class="contact-box">
-            <h2>Pronto para resolver seu problema?</h2>
-            <p>Atendimento rápido e transparente. Eu vou até você!</p>
-            <div class="btn-container">
-                <a href="https://wa.me/5574981396860?text=Olá%20Rebert,%20preciso%20de%20suporte%20técnico!" target="_blank" class="btn btn-whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i> (74) 98139-6860
-                </a>
-                <a href="https://www.instagram.com/rebertazevedo" target="_blank" class="btn btn-insta">
-                    <i class="fa-brands fa-instagram"></i> Instagram
-                </a>
-            </div>
-        </section>
-    </main>
+      <section class="action-zone">
+        <div class="badges">
+          <span class="b-orange">ORÇAMENTO GRÁTIS</span>
+          <span class="b-green">SUPORTE RÁPIDO</span>
+        </div>
+        <div class="contact-links">
+          <a href="https://wa.me/5574981396860" class="btn wa">
+            <i class="fa-brands fa-whatsapp"></i> (74) 98139-6860
+          </a>
+          <a
+            href="https://instagram.com/rebert_azvd1"
+            target="_blank"
+            class="btn ig"
+          >
+            <i class="fa-brands fa-instagram"></i> @rebert_azvd1
+          </a>
+        </div>
+      </section>
 
-    <footer>
-        <p>&copy; 2026 Rebert Azevedo - Suporte & Manutenção Especializada.</p>
-    </footer>
-</body>
+      <footer>
+        <p>&copy; 2026 Rebert Azevedo - Noite e Finais de Semana</p>
+      </footer>
+    </div>
+  </body>
+</html>
